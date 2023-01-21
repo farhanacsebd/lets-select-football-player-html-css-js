@@ -5,10 +5,10 @@
 }
 
 .hero{
-    background: url(/images/hero.PNG);
-    background-position: center;
+    background-color: black;
+    background: url(/images/Mbappe.png),url(/images/Rectangle\ 57.png) ,url(/images/soccer-goal-top-png-8\ 4.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    height:100vh;
+    background-position: left bottom,right bottom,right bottom;
+    height: 70vh;
     width: 100%;
 }

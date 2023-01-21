@@ -4,11 +4,15 @@
     box-sizing: border-box;
 }
 
+body .bg{
+    background-color: rgb(22, 22, 22);
+}
+
 .hero{
-    background-color: black;
-    background: url(/images/Mbappe.png),url(/images/Rectangle\ 57.png) ,url(/images/soccer-goal-top-png-8\ 4.png);
+    background-color: #000000;
+    background: url(/images/Mbappe.png),url(/images/Rectangle\ 57.png) ,url(/images/soccer-goal-top-png-8\ 4.png),url(/images/Card-psg.png);
     background-repeat: no-repeat;
-    background-position: left bottom,right bottom,right bottom;
+    background-position: left bottom,right bottom,right bottom,160vh 50px;
     height: 70vh;
     width: 100%;
 }

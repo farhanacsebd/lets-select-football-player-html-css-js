@@ -1,18 +1,42 @@
+/* goofle font */
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body .bg{
-    background-color: rgb(22, 22, 22);
+
+header h1{
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 76px;
+    line-height: 94.41px;
+    color: #FF5E19;
+}
+
+header h1 span{
+    background-image: url(/images/Line\ Marker.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 191.54px;
+    height: 83.48px;
+    left: 923.49px;
+}
+
+header p{
+   font-family: sans-serif;
+   font-size: 20px;
+   font-weight: 500;
+   line-height: 30px; 
+   letter-spacing: -2%;
 }
 
 .hero{
     background-color: #000000;
-    background: url(/images/Mbappe.png),url(/images/Rectangle\ 57.png) ,url(/images/soccer-goal-top-png-8\ 4.png),url(/images/Card-psg.png);
+    background: url(/images/Mbappe.png),url(/images/path56.png),url(/images/Rectangle\ 57.png) ,url(/images/soccer-goal-top-png-8\ 4.png),url(/images/Card-psg.png);
     background-repeat: no-repeat;
-    background-position: left bottom,right bottom,right bottom,160vh 50px;
+    background-position: left bottom, left bottom,right bottom,right bottom,160vh 28px;
     height: 70vh;
     width: 100%;
 }

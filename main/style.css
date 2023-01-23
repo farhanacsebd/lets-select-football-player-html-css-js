@@ -51,6 +51,8 @@ header h4{
     font-family: sans-serif; 
 }
 
+
+/* banner site */
 .hero{
     background-color: #000000;
     background: url(/images/Mbappe.png),url(/images/path56.png),url(/images/Rectangle\ 57.png) ,url(/images/soccer-goal-top-png-8\ 4.png),url(/images/Card-psg.png);
@@ -58,6 +60,19 @@ header h4{
     background-position: left bottom, left bottom,right bottom,right bottom,right 28px;
     height: 80vh;
     width: 100%;
+}
+
+.btn-color{
+    background: #19aeff;
+    color: white;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.btn-color:hover{
+    opacity: 0.9;
 }
 
 

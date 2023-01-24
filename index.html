@@ -22,25 +22,31 @@
     ></script>
     <!-- font awesome cdn link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- sweetalert cdn link -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>SelectTeam</title>
   </head>
   <body class="bg-dark text-white">
     <header>
+      <!-- hero site start -->
       <div class="hero bg-black text-center pt-5 mb-5">
         <h1 class="text-center p-3">Select Your Favourite <span>Players</span></h1>
         <div>
           <p class="px-3">
-            Playing football with your feet is one thing, but playing football with your hurt is another... <br />
+            <i>"Playing football with your feet is one thing, but playing football with your heart is another..."</i> – Francesco Totti<br />
             Anyone who thinks sunshine is happiness, has never played football in the rain!!
           </p>
-          <h4>KEEP CLAM AND LOVE FOOTBALL</h4>
+          <h4>KEEP CALM AND LOVE FOOTBALL</h4>
         </div>
       </div>
+      <!-- hero site end -->
     </header>
     <main>
+      <!-- main section start from here -->
       <section class="container">
         <div class="row">
           <div class="col-lg-9">
+            <!-- team section strat from here -->
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
                     <div class="card h-100 bg-black p-2 border border-secondary">
@@ -48,7 +54,7 @@
                       <div class="card-body text-center">
                         <h5 class="card-title">Cristiano Ronaldo</h5>
                         <small class="text-secondary">Attacking Midfielder</small>
-                        <button class="btn-color px-5 m-3">SELLECT</button>  
+                        <button class="select-btn px-5 m-3">SELLET</button>  
                       </div>
                     </div>
                   </div>
@@ -58,7 +64,7 @@
                   <div class="card-body text-center">
                     <h5 class="card-title">Lionel Messi</h5>
                     <small class="text-secondary">Attacking Midfielder</small>  
-                    <button class="btn-color px-5 m-3">SELLECT</button>
+                    <button class="select-btn px-5 m-3">SELECT</button>
                   </div>
                 </div>
               </div>
@@ -68,7 +74,7 @@
                   <div class="card-body text-center">
                     <h5 class="card-title">Neymar Jr</h5>
                     <small class="text-secondary">Attacking Midfielder</small>
-                    <button class="btn-color px-5 m-3">SELLECT</button>
+                    <button class="select-btn px-5 m-3">SELECT</button>
                   </div>
                 </div>
               </div>
@@ -78,7 +84,7 @@
                   <div class="card-body text-center">
                     <h5 class="card-title">Kylian Mbappé</h5>
                     <small class="text-secondary">Sastest Striker</small>
-                    <button class="btn-color px-5 m-3">SELLECT</button>
+                    <button class="select-btn px-5 m-3">SELECT</button>
                   </div>
                 </div>
               </div>
@@ -88,7 +94,7 @@
                   <div class="card-body text-center">
                     <h5 class="card-title">Vítor Machado</h5>
                     <small class="text-secondary">Central Midfield</small>
-                    <button class="btn-color px-5 m-3">SELLECT</button>
+                    <button class="select-btn px-5 m-3">SELECT</button>
                   </div>
                 </div>
               </div>
@@ -98,7 +104,7 @@
                   <div class="card-body text-center">
                     <h5 class="card-title">Sergio Ramos</h5>
                     <small class="text-secondary">Centre-Back</small>
-                    <button class="btn-color px-5 m-3">SELLECT</button>
+                    <button class="select-btn px-5 m-3">SELECT</button>
                   </div>
                 </div>
               </div>
@@ -108,7 +114,7 @@
                   <div class="card-body text-center">
                     <h5 class="card-title">Renato Sanches</h5>
                     <small class="text-secondary">Defensive Midfielder</small>
-                    <button class="btn-color px-5 m-3">SELLECT</button>
+                    <button class="select-btn px-5 m-3">SELECT</button>
                   </div>
                 </div>
               </div>
@@ -118,7 +124,7 @@
                   <div class="card-body text-center">
                     <h5 class="card-title">Karim Benzema</h5>
                     <small class="text-secondary">Striker</small>
-                    <button class="btn-color px-5 m-3">SELLECT</button>
+                    <button class="select-btn px-5 m-3">SELECT</button>
                   </div>
                 </div>
               </div>
@@ -128,20 +134,21 @@
                   <div class="card-body text-center">
                     <h5 class="card-title">Hakim Ziyech</h5>
                     <small class="text-secondary">Central Midfield</small>
-                    <button class="btn-color px-5 m-3">SELLECT</button>
+                    <button class="select-btn px-5 m-3">SELECT</button>
                   </div>
                 </div>
               </div>
+              <!-- team section end from here -->
             </div>
           </div>
           <div class="col-lg-3">
+            <!-- calcutation or list iteam section start from here  -->
             <div class="d-flex flex-column gap-5 my-5">
                 <div class="card bg-black" style="width: 18rem">
                     <div class="card-body">
                       <h4 class="card-title text-center mb-4">Selected - V <img src="/images/Ureg-Ureg Marker.png" alt=""></h4>
-                      <ol>
-                          <li></li>
-                          <li></li>
+                      <ol id="order-list">
+                        
                       </ol>
                     </div>
                   </div>
@@ -165,7 +172,7 @@
                       <label class="me-4" for="">Coach</label>
                       <input class="bg-black border w-50 mx-auto text-white" type="number" name="" id="">
                      </div>
-                     <button class="btn-cal w-100 mx-auto">Calculate</button>
+                     <button class="btn-cal w-100 mx-auto">Calculate Total</button>
 
                      <div class="d-flex justify-content-between mt-3 mb-4">
                       <h6>Total</h6> <h6 style="color: #FF5E19;">$<span>00</span></h6>
@@ -173,9 +180,11 @@
                     </div>
                   </div>
             </div>
+            <!-- calcutation or list iteam section end from here  -->
           </div>
         </div>
       </section>
+      <!-- main section end from here -->
     </main>
     <!-- footer end -->
     <footer class="m-5 text-center">

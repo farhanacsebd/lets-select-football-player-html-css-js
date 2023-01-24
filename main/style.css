@@ -64,7 +64,7 @@ header h4{
 
 
 /* selection button */
-.btn-color{
+.select-btn{
     background: #7d2ae8;
     color: white;
     padding-top: 7px;
@@ -73,7 +73,7 @@ header h4{
     font-weight: 700;
 }
 
-.btn-color:hover{
+.select-btn:hover{
     opacity: 0.9;
 }
 

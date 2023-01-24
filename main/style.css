@@ -62,8 +62,10 @@ header h4{
     width: 100%;
 }
 
+
+/* selection button */
 .btn-color{
-    background: #19aeff;
+    background: #7d2ae8;
     color: white;
     padding-top: 7px;
     padding-bottom: 7px;
@@ -76,8 +78,22 @@ header h4{
 }
 
 
+/* calculation button */
+.btn-cal{
+    background: #7d2ae8;
+    color: white;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.btn-cal:hover{
+    opacity: 0.9;
+}
 
 
+/* try to responsive */
 @media(max-width:768px) {
     .hero{
         height: 170vh;

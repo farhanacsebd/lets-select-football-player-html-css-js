@@ -27,6 +27,7 @@
     <title>SelectTeam</title>
   </head>
   <body class="bg-dark text-white">
+    <div id="preloader"></div>
     <header>
       <!-- hero site start -->
       <div class="hero bg-black text-center pt-5 mb-5">
@@ -156,7 +157,7 @@
                     <div class="card-body">
                       <h4 class="card-title text-center text-white mb-4">Budget<br><img src="/images/Ureg-Ureg Marker.png" alt=""></h4>
                      <div class="d-flex">
-                      <label for="first-field">Per Player</label> <input id="first-field" class="bg-black border w-50 mx-auto text-white" type="number" name="" autofocus>
+                      <label for="first-field">Per Player</label> <input id="first-field" class="bg-black border w-50 mx-auto text-white" style="caret-color: red;" autofocus>
                      </div>
                     
                      <button id="btn-calculation"  class="btn-cal w-100 mx-auto m-4">Calculate</button>
@@ -166,13 +167,13 @@
                      </div>
                      <div class="d-flex">
                       <label for="second-filed">Manager</label>
-                      <input id="second-filed" class="bg-black border w-50 mx-auto text-white" type="number" name="">
+                      <input id="second-filed" class="bg-black border w-50 mx-auto text-white"  style="caret-color: red;">
                      </div>
                      <div class="d-flex my-4">
                       <label class="me-4" for="third-field">Coach</label>
-                      <input id="third-field" class="bg-black border w-50 mx-auto text-white" type="number" name="">
+                      <input id="third-field" class="bg-black border w-50 mx-auto text-white"  style="caret-color: red;">
                      </div>
-                     <button total-btn class="btn-cal w-100 mx-auto">Calculate Total</button>
+                     <button id="total-btn" class="btn-cal w-100 mx-auto">Calculate Total</button>
 
                      <div class="d-flex justify-content-between mt-3 mb-4">
                       <h6>Total</h6> <h6 style="color: #FF5E19;">$<span id="total">00</span></h6>

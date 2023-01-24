@@ -17,6 +17,36 @@ for (const playersBtn of players) {
         playersBtn.setAttribute('disabled',true)
         playersBtn.style.backgroundColor = "lightgray";
         playersBtn.style.color = "darkgray";
+        /* let players = playersNameArr.length;
+        console.log(players); */
+
+        document.getElementById('btn-calculation').addEventListener('click',function(e){
+          e.stopImmediatePropagation()
+          const firstInput = document.getElementById('first-field');
+          const firstField = parseFloat(firstInput.value);
+          firstInput.value = '';
+          // console.log( firstInput.value);
+
+          // catch the array of length
+          let players = playersNameArr.length;
+          const playersExpensesTotal = firstField * players;
+          // console.log(playerscalculation);
+
+          // get the player expenses
+          const expenses = document.getElementById('expenses');
+          if(isNaN(firstField) || firstField < 0){
+            Swal.fire({
+              color: '#fff',
+              background: '#212529',
+              icon: 'error',
+              title: 'Oops...',
+              text: 'Your value must have any positive number.',
+            })
+          }
+          else{
+            expenses.innerText = playersExpensesTotal;
+          }
+        })
       }
       else{
         Swal.fire({

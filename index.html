@@ -156,26 +156,26 @@
                     <div class="card-body">
                       <h4 class="card-title text-center text-white mb-4">Budget<br><img src="/images/Ureg-Ureg Marker.png" alt=""></h4>
                      <div class="d-flex">
-                      <label for="per-player">Per Player</label> <input class="bg-black border w-50 mx-auto text-white" type="number" name="" id="per-player" autofocus>
+                      <label for="first-field">Per Player</label> <input id="first-field" class="bg-black border w-50 mx-auto text-white" type="number" name="" autofocus>
                      </div>
                     
-                     <button class="btn-cal w-100 mx-auto m-4">Calculate</button>
+                     <button id="btn-calculation"  class="btn-cal w-100 mx-auto m-4">Calculate</button>
 
                      <div class="d-inline-flex mb-4">
-                      <h6 class="me-4">Player Expenses</h6> <h6>$<span>00</span></h6>
+                      <h6 class="me-4">Player Expenses</h6> <h6>$<span id="expenses">00</span></h6>
                      </div>
                      <div class="d-flex">
-                      <label for="">Manager</label>
-                      <input class="bg-black border w-50 mx-auto text-white" type="number" name="" id="">
+                      <label for="second-filed">Manager</label>
+                      <input id="second-filed" class="bg-black border w-50 mx-auto text-white" type="number" name="">
                      </div>
                      <div class="d-flex my-4">
-                      <label class="me-4" for="">Coach</label>
-                      <input class="bg-black border w-50 mx-auto text-white" type="number" name="" id="">
+                      <label class="me-4" for="third-field">Coach</label>
+                      <input id="third-field" class="bg-black border w-50 mx-auto text-white" type="number" name="">
                      </div>
-                     <button class="btn-cal w-100 mx-auto">Calculate Total</button>
+                     <button total-btn class="btn-cal w-100 mx-auto">Calculate Total</button>
 
                      <div class="d-flex justify-content-between mt-3 mb-4">
-                      <h6>Total</h6> <h6 style="color: #FF5E19;">$<span>00</span></h6>
+                      <h6>Total</h6> <h6 style="color: #FF5E19;">$<span id="total">00</span></h6>
                      </div>
                     </div>
                   </div>
@@ -218,5 +218,6 @@
     ></script>
     <!-- link with js file -->
     <script src="main/app.js"></script>
+    <script src="/main/calculationApp.js"></script>
   </body>
 </html>
